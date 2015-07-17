@@ -9,8 +9,6 @@ code () {
     fi
 }
 
-alias dot='cd ~/Dropbox/shengy/code/dotfiles/'
-
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'

@@ -1,16 +1,40 @@
 - clean: ['~']
 - link:
-    ~/.dotfiles: ''
-    ~/.tmux: dbstmux/
-    ~/.tmux.conf: dbstmux/tmux.conf
-    ~/.vim: dbsmvim/
-    ~/.vimrc: dbsmvim/vimrc
-    ~/.vimycm: dbsmvim/scripts/vimycm/
-    ~/.oh-my-zsh: oh-my-zsh/
-    ~/.bash_profile: bash_profile
-    ~/.zshrc: zshrc
-    ~/.gitconfig: gitconfig
-    ~/.gitignore_global: gitignore_global
-    ~/.emacs: emacs
+    ~/.dotfiles:
+      relink: true
+      path: ''
+    ~/.tmux:
+      relink: true
+      path: dbstmux/
+    ~/.tmux.conf:
+      relink: true
+      path: dbstmux/tmux.conf
+    ~/.vim:
+      relink: true
+      path: dbsmvim/
+    ~/.vimrc:
+      relink: true
+      path: dbsmvim/vimrc
+    ~/.vimycm:
+      relink: true
+      path: dbsmvim/scripts/vimycm/
+    ~/.oh-my-zsh:
+      relink: true
+      path: oh-my-zsh/
+    ~/.bash_profile:
+      relink: true
+      path: bash_profile
+    ~/.zshrc:
+      relink: true
+      path: zshrc
+    ~/.gitconfig:
+      relink: true
+      path: gitconfig
+    ~/.gitignore_global:
+      relink: true
+      path: gitignore_global
+    ~/.emacs:
+      relink: true
+      path: emacs
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

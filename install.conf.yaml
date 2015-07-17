@@ -1,3 +1,15 @@
-- clean: []
-- link: {}
-- shell: []
+- clean: ['~']
+- link:
+    ~/.dotfiles: ''
+    ~/.tmux: dbstmux/
+    ~/.tmux.conf: dbstmux/tmux.conf
+    ~/.vim: dbsmvim
+    ~/.vimrc: dbsmvim/vimrc
+    ~/.oh-my-zsh: .oh-my-zsh/
+    ~/.bash_profile: bash_profile
+    ~/.zshrc: zshrc
+    ~/.gitconfig: gitconfig
+    ~/.gitignore_global: gitignore_global
+    ~/.emacs: emacs
+- shell:
+  - [git submodule update --init --recursive, Installing submodules]

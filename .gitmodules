@@ -1,0 +1,12 @@
+[submodule "dotbot"]
+	path = dotbot
+	url = https://github.com/anishathalye/dotbot.git
+[submodule "dbsmvim"]
+	path = dbsmvim
+	url = https://github.com/ShengYun/dbsmvim.git
+[submodule "dbstmux"]
+	path = dbstmux
+	url = https://github.com/ShengYun/dbstmux.git
+[submodule "oh-my-zsh"]
+	path = oh-my-zsh
+	url = https://github.com/robbyrussell/oh-my-zsh.git

@@ -12,3 +12,5 @@ code () {
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'
+
+alias leet='cd ~/Dropbox/shengy/code/DBSLeetCode/'

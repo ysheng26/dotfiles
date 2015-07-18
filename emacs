@@ -12,6 +12,10 @@
 ; line numbers
 (global-linum-mode t)
 
+; indent settings
+(setq-default indent-tabs-mode nil)
+(setq tab-width 4)
+
 ; emacs backup behavior
 (setq backup-directory-alist `(("." . "~/.emacs_auto_backup")))
 (setq backup-by-copying t)

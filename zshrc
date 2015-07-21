@@ -49,7 +49,7 @@ DISABLE_AUTO_TITLE="true"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git brew django heroku mercurial osx perl pip python postgres sublime tmux vundle)
+plugins=(git brew django heroku osx pip python postgres sublime tmux sublime web-search)
 
 # User configuration
 

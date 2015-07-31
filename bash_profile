@@ -12,13 +12,6 @@ code () {
     fi
 }
 
-# gruvbox colorscheme setup for terminals
-if [[ "$OSTYPE" == "linux-gnu" ]]; then
-    source ~/.vim/bundle/gruvbox/gruvbox_256palette.sh
-elif [[ "$OSTYPE" == "darwin"* ]]; then
-    source ~/.vim/bundle/gruvbox/gruvbox_256palette_osx.sh
-fi
-
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'

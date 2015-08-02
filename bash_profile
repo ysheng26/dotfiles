@@ -12,6 +12,8 @@ code () {
     fi
 }
 
+export TERM=screen-256color-bce
+
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'

@@ -27,3 +27,5 @@
 ; uncomment if absolutely must have no backup files
 ; (setq make-backup-files nil)
 
+(load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
+

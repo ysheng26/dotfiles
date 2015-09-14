@@ -4,9 +4,9 @@ export LC_ALL=en_US.UTF-8
 export TERM=screen-256color-bce
 
 # environment var for ATS
-export PATSHOME=/Users/shengy/repos/ATS2
-export PATSHOMERELOC=/Users/shengy/repos/ATS2-contrib
-export PATSHOME_contrib=/Users/shengy/repos/ATS2-contrib
+export PATSHOME=~/repos/ATS2
+export PATSHOMERELOC=~/repos/ATS2-contrib
+export PATSHOME_contrib=~/repos/ATS2-contrib
 export PATH=${PATSHOME}/bin:${PATH}
 
 alias geo='cd ~/repos/georouting/'

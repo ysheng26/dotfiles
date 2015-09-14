@@ -7,7 +7,7 @@
 (package-initialize) ;; You might already have this line
 
 ;font setting
-(set-default-font "Monaco 16")
+(set-default-font "Dejavu Sans Mono 13")
 
 ; line numbers
 (global-linum-mode t)

@@ -33,8 +33,5 @@
     ~/.gitignore_global:
       relink: true
       path: gitignore_global
-    ~/.emacs.d:
-      relink: true
-      path: emacs.d/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]

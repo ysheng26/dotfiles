@@ -15,5 +15,6 @@ alias gae='cd ~/Dropbox/shengy/code/geo-route/'
 alias leet='cd ~/Dropbox/shengy/code/DBSLeetCode/'
 alias cc150='cd ~/Dropbox/shengy/code/cc150/'
 
-alias 520='cd ~/Dropbox/shengy/bu_course/CS520/cs520-2015-fall-shengy'
+alias 520='cd ~/Dropbox/shengy/bu_course/CS520/'
+alias 655='cd ~/Dropbox/shengy/bu_course/CS655/'
 

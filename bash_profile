@@ -18,3 +18,6 @@ alias cc150='cd ~/Dropbox/shengy/code/cc150/'
 alias 520='cd ~/Dropbox/shengy/bu_course/CS520/'
 alias 655='cd ~/Dropbox/shengy/bu_course/CS655/'
 
+# Base16 Shell
+BASE16_SHELL="$HOME/.vim/bundle/base16-shell/base16-default.dark.sh"
+[[ -s $BASE16_SHELL ]] && source $BASE16_SHELL

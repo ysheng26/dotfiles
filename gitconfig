@@ -9,14 +9,14 @@
     ; editor = emacs
 [diff]
     ; tool = p4merge
-    tool = bcomp
-    ; tool = kdiff3
+    ; tool = bcomp
+    tool = kdiff3
     ; tool = diffmerge
     ; tool = meld
 [merge]
     ; tool = p4merge
-    tool = bcomp
-    ; tool = kdiff3
+    ; tool = bcomp
+    tool = kdiff3
     ; tool = diffmerge
     ; tool = meld
 
@@ -26,12 +26,6 @@
 [mergetool "bcomp"]
     trustExitCode = true
     cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
-[difftool "sourcetree"]
-	cmd = /Users/shengy/repos/kdiff3-code/kdiff3/releaseQt/kdiff3.app/Contents/MacOS/kdiff3 \"$LOCAL\" \"$REMOTE\"
-	path = 
-[mergetool "sourcetree"]
-	cmd = /Users/shengy/repos/kdiff3-code/kdiff3/releaseQt/kdiff3.app/Contents/MacOS/kdiff3 \"$BASE\" \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
-	trustExitCode = true
 [difftool "p4merge"]
     cmd = /Applications/p4merge.app/Contents/MacOS/p4merge \"$LOCAL\" \"$REMOTE\"
 [mergetool "p4merge"]

@@ -17,4 +17,5 @@ alias cc150='cd ~/Dropbox/shengy/code/cc150/'
 
 alias 520='cd ~/Dropbox/shengy/bu_course/CS520/'
 alias 655='cd ~/Dropbox/shengy/bu_course/CS655/'
+alias 660='cd ~/Dropbox/shengy/bu_course/CS660/'
 

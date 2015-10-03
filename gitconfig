@@ -9,14 +9,14 @@
     ; editor = emacs
 [diff]
     ; tool = p4merge
-    ; tool = bcomp
-    tool = kdiff3
+    tool = bcomp
+    ; tool = kdiff3
     ; tool = diffmerge
     ; tool = meld
 [merge]
     ; tool = p4merge
-    ; tool = bcomp
-    tool = kdiff3
+    tool = bcomp
+    ; tool = kdiff3
     ; tool = diffmerge
     ; tool = meld
 

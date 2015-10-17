@@ -6,6 +6,33 @@
   (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
 (package-initialize) ;; You might already have this line
 
+(require 'cl)
+;; Guarantee all packages are installed on start
+(defvar packages-list
+  '(auto-complete
+    expand-region
+    flycheck
+    flycheck-ats2
+   )
+  "List of packages needs to be installed at launch")
+
+; auto-complete
+(global-auto-complete-mode t)
+
+(defun has-package-not-installed ()
+  (loop for p in packages-list
+        when (not (package-installed-p p)) do (return t)
+        finally (return nil)))
+(when (has-package-not-installed)
+  ;; Check for new packages (package versions)
+  (message "%s" "Get latest versions of all packages...")
+  (package-refresh-contents)
+  (message "%s" " done.")
+  ;; Install the missing packages
+  (dolist (p packages-list)
+    (when (not (package-installed-p p))
+      (package-install p))))
+
 ;font setting
 (set-default-font "Dejavu Sans Mono 13")
 
@@ -27,6 +54,7 @@
 ; uncomment if absolutely must have no backup files
 ; (setq make-backup-files nil)
 
+; ats-mode
 (load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
 
 ; GUI settings

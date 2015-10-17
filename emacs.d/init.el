@@ -8,13 +8,13 @@
 
 (require 'cl)
 ;; Guarantee all packages are installed on start
+;; helm
+;; magit
 (defvar packages-list
   '(auto-complete
     expand-region
     flycheck
     flycheck-ats2
-    helm
-    magit
    )
   "List of packages needs to be installed at launch")
 

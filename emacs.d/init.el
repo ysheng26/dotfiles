@@ -13,6 +13,9 @@
     expand-region
     flycheck
     flycheck-ats2
+    helm
+    evil
+    magit
    )
   "List of packages needs to be installed at launch")
 
@@ -73,8 +76,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  )
-
-; ido mode
-(setq ido-enable-flex-matching t)
-(setq ido-everywhere t)
-(ido-mode 1)

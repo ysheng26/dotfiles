@@ -14,7 +14,6 @@
     flycheck
     flycheck-ats2
     helm
-    evil
     magit
    )
   "List of packages needs to be installed at launch")

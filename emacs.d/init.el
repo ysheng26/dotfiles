@@ -16,9 +16,6 @@
    )
   "List of packages needs to be installed at launch")
 
-; auto-complete
-(global-auto-complete-mode t)
-
 (defun has-package-not-installed ()
   (loop for p in packages-list
         when (not (package-installed-p p)) do (return t)

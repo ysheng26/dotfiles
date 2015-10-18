@@ -12,9 +12,11 @@
 ;; magit
 (defvar packages-list
   '(auto-complete
-    expand-region
     flycheck
     flycheck-ats2
+    evil
+    helm
+    magit
    )
   "List of packages needs to be installed at launch")
 
@@ -33,7 +35,7 @@
       (package-install p))))
 
 ;font setting
-(set-default-font "Dejavu Sans Mono 13")
+(set-default-font "Dejavu Sans Mono 16")
 
 ; line numbers
 (global-linum-mode t)
@@ -55,6 +57,11 @@
 
 ; ats-mode
 (load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
+
+; evil-mode
+(require 'evil)
+(evil-mode t)
+(define-key evil-insert-state-map (kbd "jk") 'evil-normal-state)
 
 ; GUI settings
 (tool-bar-mode -1)

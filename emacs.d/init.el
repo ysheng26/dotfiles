@@ -34,6 +34,7 @@ Return a list of installed packages or nil for every skipped package."
                           'flycheck
                           'flycheck-ats2
                           'org
+                          'powerline
                           'ag
                           'yasnippet
                           'magit)

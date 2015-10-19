@@ -1,38 +1,40 @@
-(require 'package) ;; You might already have this line
-(add-to-list 'package-archives
-             '("melpa" . "http://melpa.org/packages/"))
-(when (< emacs-major-version 24)
-  ;; For important compatibility libraries like cl-lib
-  (add-to-list 'package-archives '("gnu" . "http://elpa.gnu.org/packages/")))
-(package-initialize) ;; You might already have this line
+(require 'package)
 
-(require 'cl)
-;; Guarantee all packages are installed on start
-;; helm
-;; magit
-(defvar packages-list
-  '(auto-complete
-    flycheck
-    flycheck-ats2
-    evil
-    helm
-    magit
-   )
-  "List of packages needs to be installed at launch")
+(add-to-list 'package-archives '("org" . "http://orgmode.org/elpa/"))
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(add-to-list 'package-archives '("melpa-stable" . "http://stable.melpa.org/packages/"))
 
-(defun has-package-not-installed ()
-  (loop for p in packages-list
-        when (not (package-installed-p p)) do (return t)
-        finally (return nil)))
-(when (has-package-not-installed)
-  ;; Check for new packages (package versions)
-  (message "%s" "Get latest versions of all packages...")
-  (package-refresh-contents)
-  (message "%s" " done.")
-  ;; Install the missing packages
-  (dolist (p packages-list)
-    (when (not (package-installed-p p))
-      (package-install p))))
+(setq package-enable-at-startup nil)
+(package-initialize)
+
+(defun ensure-package-installed (&rest packages)
+  "Assure every package is installed, ask for installation if it’s not.
+
+Return a list of installed packages or nil for every skipped package."
+  (mapcar
+   (lambda (package)
+     (if (package-installed-p package)
+         nil
+       (if (y-or-n-p (format "Package %s is missing. Install it? " package))
+           (package-install package)
+         package)))
+   packages))
+
+;; Make sure to have downloaded archive description.
+(or (file-exists-p package-user-dir)
+    (package-refresh-contents))
+
+;; Activate installed packages
+(package-initialize)
+
+;; Assuming you wish to install "iedit" and "magit"
+(ensure-package-installed 'auto-complete
+                          'helm
+                          'flycheck
+                          'flycheck-ats2
+                          'org
+                          'magit)
+
 
 ;font setting
 (set-default-font "Dejavu Sans Mono 16")
@@ -57,11 +59,6 @@
 
 ; ats-mode
 (load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
-
-; evil-mode
-(require 'evil)
-(evil-mode t)
-(define-key evil-insert-state-map (kbd "jk") 'evil-normal-state)
 
 ; GUI settings
 (tool-bar-mode -1)

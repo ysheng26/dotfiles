@@ -46,6 +46,9 @@ Return a list of installed packages or nil for every skipped package."
 (setq helm-buffers-fuzzy-matching t)
 (helm-mode 1)
 
+; powerline
+(powerline-default-theme)
+
 ; font setting
 (set-default-font "Dejavu Sans Mono 16")
 

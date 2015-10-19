@@ -29,15 +29,29 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install "iedit" and "magit"
 (ensure-package-installed 'auto-complete
+                          'iedit
                           'helm
                           'flycheck
                           'flycheck-ats2
                           'org
+                          'ag
+                          'yasnippet
                           'magit)
 
+; auto-complete
+(global-auto-complete-mode t)
 
-;font setting
+; helm
+(setq helm-buffers-fuzzy-matching t)
+(helm-mode 1)
+
+; font setting
 (set-default-font "Dejavu Sans Mono 16")
+
+; no splash screen and startup message etc
+(setq inhibit-splash-screen t
+      inhibit-startup-message t
+      inhibit-startup-echo-area-message t)
 
 ; line numbers
 (global-linum-mode t)

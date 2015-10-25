@@ -5,7 +5,7 @@
     excludesfile = /Users/shengy/.gitignore_global
     autocrlf = false
     ; editor = mvim -f
-    editor = vi
+    editor = vim
     ; editor = emacs
 [diff]
     ; tool = p4merge

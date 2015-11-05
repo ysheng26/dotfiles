@@ -9,7 +9,8 @@
     ; editor = emacs
 [diff]
     ; tool = p4merge
-    tool = bcomp
+    ; tool = bcomp
+    tool = vimdiff
     ; tool = kdiff3
     ; tool = diffmerge
     ; tool = meld

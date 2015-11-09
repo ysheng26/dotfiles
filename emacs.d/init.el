@@ -30,27 +30,28 @@ Return a list of installed packages or nil for every skipped package."
 ;; Assuming you wish to install "iedit" and "magit"
 (ensure-package-installed 'auto-complete
                           'iedit
-                          'helm
+                          ; 'helm
                           'flycheck
                           'flycheck-ats2
                           'org
                           'powerline
                           'ag
                           'yasnippet
-                          'magit)
+                          ; 'magit
+                          )
 
 ; auto-complete
 (global-auto-complete-mode t)
 
 ; helm
-(setq helm-buffers-fuzzy-matching t)
-(helm-mode 1)
+; (setq helm-buffers-fuzzy-matching t)
+; (helm-mode 1)
 
 ; powerline
 (powerline-default-theme)
 
 ; font setting
-(set-default-font "Dejavu Sans Mono 16")
+(set-default-font "Dejavu Sans Mono 14")
 
 ; no splash screen and startup message etc
 (setq inhibit-splash-screen t

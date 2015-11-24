@@ -83,4 +83,7 @@ source $ZSH/oh-my-zsh.sh
 # alias zshconfig="mate ~/.zshrc"
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
+# let emacs work with zsh
+[[ $EMACS = t ]] && unsetopt zle
+
 source ~/.bash_profile

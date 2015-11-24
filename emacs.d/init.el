@@ -29,14 +29,14 @@ Return a list of installed packages or nil for every skipped package."
 
 ;; Assuming you wish to install "iedit" and "magit"
 (ensure-package-installed 'auto-complete
-                          'iedit
+                          ; 'iedit
                           ; 'helm
-                          'flycheck
-                          'flycheck-ats2
+                          ; 'flycheck
+                          ; 'flycheck-ats2
                           'org
-                          'powerline
-                          'ag
-                          'yasnippet
+                          ; 'powerline
+                          ; 'ag
+                          ; 'yasnippet
                           ; 'magit
                           )
 
@@ -48,7 +48,7 @@ Return a list of installed packages or nil for every skipped package."
 ; (helm-mode 1)
 
 ; powerline
-(powerline-default-theme)
+; (powerline-default-theme)
 
 ; font setting
 (set-default-font "Dejavu Sans Mono 14")
@@ -77,7 +77,20 @@ Return a list of installed packages or nil for every skipped package."
 ; (setq make-backup-files nil)
 
 ; ats-mode
-(load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
+; (load "~/.emacs.d/plugins/ats-mode/ats-mode.el")
+
+(setq load-path
+  (cons "~/.emacs.d/plugins/ats-mode" load-path))
+;;;
+(setq auto-mode-alist
+  (cons '("\\.sats" . ats-mode) auto-mode-alist))
+(setq auto-mode-alist
+  (cons '("\\.dats" . ats-mode) auto-mode-alist))
+(setq auto-mode-alist
+  (cons '("\\.hats" . ats-mode) auto-mode-alist))
+;;;
+(autoload 'ats-mode
+          "ats-mode" "Major mode for editing ATS code" t)
 
 ; GUI settings
 (tool-bar-mode -1)
@@ -89,8 +102,6 @@ Return a list of installed packages or nil for every skipped package."
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(ansi-color-faces-vector [default default default italic underline success warning error])
- '(ansi-color-names-vector ["#242424" "#e5786d" "#95e454" "#cae682" "#8ac6f2" "#333366" "#ccaa8f" "#f6f3e8"])
  '(custom-enabled-themes (quote (wombat))))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

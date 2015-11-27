@@ -10,6 +10,9 @@ export PATSHOMERELOC=~/repos/ATS2-contrib
 export PATSHOME_contrib=~/repos/ATS2-contrib
 export PATH=${PATSHOME}/bin:${PATH}
 
+# environment var for LaTeX
+export PATH=/Library/TeX/texbin:${PATH}
+
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'

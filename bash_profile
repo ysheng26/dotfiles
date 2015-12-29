@@ -23,3 +23,4 @@ alias 520='cd ~/Dropbox/shengy/bu_course/CS520/'
 alias 655='cd ~/Dropbox/shengy/bu_course/CS655/'
 alias 660='cd ~/Dropbox/shengy/bu_course/CS660/'
 
+alias solarized='~/.solarized/solarize.sh'

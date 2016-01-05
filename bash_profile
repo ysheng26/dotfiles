@@ -16,6 +16,7 @@ export PATH=/Library/TeX/texbin:${PATH}
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'
+alias leet='cd ~/Dropbox/shengy/code/JavaLeetCode/'
 alias ivp='cd ~/Dropbox/shengy/EclipseWorkspace/interview_practice/'
 
 alias solarized='~/.solarized/solarize.sh'

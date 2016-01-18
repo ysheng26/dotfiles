@@ -18,5 +18,6 @@ alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'
 alias leet='cd ~/Dropbox/shengy/code/JavaLeetCode/'
 alias ivp='cd ~/Dropbox/shengy/EclipseWorkspace/interview_practice/'
+alias epi='/Users/shengy/repos/epibook.github.io/solutions/java/src/main/java/com/epi'
 
 alias solarized='~/.solarized/solarize.sh'

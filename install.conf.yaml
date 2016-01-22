@@ -18,6 +18,9 @@
     ~/.vimrc:
       relink: true
       path: dbsmvim/init.vim
+    ~/.config/nvim:
+      relink: true
+      path: dbsmvim/
     ~/.vimycm:
       relink: true
       path: dbsmvim/scripts/vimycm/
@@ -41,6 +44,5 @@
       path: emacs.d/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
-  - [mkdir -p ${XDG_CONFIG_HOME:=$HOME/.config}]
-  - [ln -s ~/.vim $XDG_CONFIG_HOME/nvim]
-  - [ln -s ~/.vimrc $XDG_CONFIG_HOME/nvim/init.vim]
+  - mkdir -p ~/.config
+  # - pip install neovim

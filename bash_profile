@@ -23,6 +23,3 @@ alias 552='cd ~/Dropbox/shengy/bu_course/CS552'
 alias 591='cd ~/Dropbox/shengy/bu_course/CS591K1'
 
 alias solarized='~/.solarized/solarize.sh'
-
-# added by Anaconda2 2.4.1 installer
-export PATH="/Users/shengy/anaconda/bin:$PATH"

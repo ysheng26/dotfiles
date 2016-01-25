@@ -13,6 +13,11 @@ export PATH=${PATSHOME}/bin:${PATH}
 # environment var for LaTeX
 export PATH=/Library/TeX/texbin:${PATH}
 
+# local bash_profile
+if [ -f ~/.bash_profile_local ]; then
+    source ~/.bash_profile_local
+fi
+
 alias geo='cd ~/repos/georouting/'
 alias geoh='cd ~/repos/georouting-hongkai/'
 alias gae='cd ~/Dropbox/shengy/code/geo-route/'

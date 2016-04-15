@@ -6,9 +6,6 @@
     ~/.tmux:
       relink: true
       path: dbstmux/
-    ~/.solarized:
-      relink: true
-      path: solarized/
     ~/.tmux.conf:
       relink: true
       path: dbstmux/tmux.conf

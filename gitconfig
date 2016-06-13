@@ -13,10 +13,10 @@
     tool = bc3
 
 [difftool "bc3"]
-    path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
+    ; path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
     ; cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE"
 [mergetool "bc3"]
-    path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
+    ; path = "c:/Program Files/Beyond Compare 4/bcomp.exe"
     ; cmd = "/usr/local/bin/bcomp" "$LOCAL" "$REMOTE" "$BASE" "$MERGED"
     trustExitCode = true
 

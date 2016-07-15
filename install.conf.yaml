@@ -45,9 +45,6 @@
     ~/.i3:
       relink: true
       path: i3/
-    ~/.i3status.conf:
-      relink: true
-      path: i3/i3status.conf
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

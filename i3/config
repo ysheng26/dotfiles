@@ -209,7 +209,7 @@ bindsym XF86AudioPrev exec playerctl previous
 exec xmodmap ~/.Xmodmap
 
 # background
-exec_always feh --bg-scale ~/Pictures/wallpaper/wall.jpg
+# exec_always feh --bg-scale ~/Pictures/wallpaper/wall.jpg
 
 # auto start programmes
 exec xwrits typetime=30 after 15 clock breakclock multiply=5:1.4

@@ -113,7 +113,7 @@ set $workspace4 "4: Sublime Text"
 set $workspace5 "5: IDE"
 set $workspace6 "6"
 set $workspace7 "7"
-set $workspace8 "8"
+set $workspace8 "8: Beyond Compare"
 set $workspace9 "9: Mail/Chat"
 set $workspace10 "10: Music"
 
@@ -221,8 +221,9 @@ assign [class="google-chrome"] $workspace2
 assign [class="chromium-browser"] $workspace3
 assign [class="Sublime_text"] $workspace4
 assign [class="jetbrains-webstorm"] $workspace5
+assign [class="Bcompare"] $workspace8
 assign [class="Firefox"] $workspace9
-assign [class="Spotify"] $workspace10
+assign [class="spotify"] $workspace10
 
 # multiply monitor configurations
 # use arandr

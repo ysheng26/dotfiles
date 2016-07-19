@@ -206,12 +206,24 @@ bindsym XF86AudioPrev exec playerctl previous
 # i3 keybindings
 
 # Microsoft Natural Ergonomic 4000
+# Home
+bindcode 180 exec thunar ~
+# Search
+bindcode 225 exec searchmonkey
+# Mail
 bindcode 163 workspace $workspace9
+# 1
 bindcode 192 workspace $workspace1
+# 2
 bindcode 193 workspace $workspace2
+# 3
 bindcode 194 workspace $workspace3
+# 4
 bindcode 195 workspace $workspace4
+# 5
 bindcode 196 workspace $workspace5
+# Favorite
+bindcode 164 kill
 
 # keyboard remapping
 exec xmodmap ~/.Xmodmap

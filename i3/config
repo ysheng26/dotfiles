@@ -110,8 +110,8 @@ set $workspace1 "1: Terminal"
 set $workspace2 "2: Chrome"
 set $workspace3 "3: Chromium"
 set $workspace4 "4: Sublime Text"
-set $workspace5 "5: IDE"
-set $workspace6 "6: gitk / git gui"
+set $workspace5 "5: gitk / git gui"
+set $workspace6 "6: IDE"
 set $workspace7 "7"
 set $workspace8 "8: Beyond Compare"
 set $workspace9 "9: Mail/Chat"
@@ -227,9 +227,9 @@ exec dropbox start
 assign [class="google-chrome"] $workspace2
 assign [class="chromium-browser"] $workspace3
 assign [class="Sublime_text"] $workspace4
-assign [class="jetbrains-webstorm"] $workspace5
-assign [class="Gitk"] $workspace6
-assign [class="Git-gui"] $workspace6
+assign [class="Gitk"] $workspace5
+assign [class="Git-gui"] $workspace5
+assign [class="jetbrains-webstorm"] $workspace6
 assign [class="Bcompare"] $workspace8
 assign [class="Firefox"] $workspace9
 assign [class="spotify"] $workspace10

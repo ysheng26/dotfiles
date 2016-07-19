@@ -212,7 +212,7 @@ bindsym XF86AudioPrev exec playerctl previous
 # Home
 bindcode 180 exec thunar ~
 # Search
-bindcode 225 exec searchmonkey
+bindcode 225 exec rofi -show run
 # Mail
 bindcode 163 workspace $workspace9
 # 1

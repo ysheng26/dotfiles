@@ -13,3 +13,9 @@
 [submodule "solarized"]
 	path = solarized
 	url = https://github.com/ShengYun/solarize.git
+[submodule "misc/gnome-terminal-colors-solarized"]
+	path = misc/gnome-terminal-colors-solarized
+	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
+[submodule "misc/dircolors-solarized"]
+	path = misc/dircolors-solarized
+	url = https://github.com/seebi/dircolors-solarized.git

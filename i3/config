@@ -210,7 +210,7 @@ bindsym XF86AudioPrev exec playerctl previous
 
 # Microsoft Natural Ergonomic 4000
 # Home
-bindcode 180 exec thunar ~
+bindcode 180 exec nautilus ~
 # Search
 bindcode 225 exec rofi -show run
 # Mail

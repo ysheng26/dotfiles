@@ -232,7 +232,7 @@ bindcode 164 kill
 exec xmodmap ~/.Xmodmap
 
 # background
-# exec_always feh --bg-scale ~/Pictures/wallpaper/wall.jpg
+exec_always feh --bg-scale ~/Pictures/wallpaper/wallpaper.png
 
 # auto start programmes
 exec xwrits typetime=20 after 15 clock breakclock multiply=5:1.4

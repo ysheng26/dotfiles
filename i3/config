@@ -227,6 +227,8 @@ bindcode 195 workspace $workspace4
 bindcode 196 workspace $workspace5
 # Favorite
 bindcode 164 kill
+# Calculator
+bindcode 148 exec bash lock
 
 # keyboard remapping
 exec xmodmap ~/.Xmodmap
@@ -242,6 +244,7 @@ exec dropbox start
 assign [class="google-chrome"] $workspace2
 assign [class="chromium-browser"] $workspace3
 assign [class="Sublime_text"] $workspace4
+assign [class="Atom"] $workspace4
 assign [class="jetbrains-webstorm"] $workspace4
 assign [class="Gitk"] $workspace5
 assign [class="Git-gui"] $workspace5

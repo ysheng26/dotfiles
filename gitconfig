@@ -1,11 +1,12 @@
 [user]
     name = Yun Sheng
-    email = uewing@gmail.com
+    ; email = uewing@gmail.com
+    email = yun.sheng@zoominfo.com
 [core]
     excludesfile = /Users/shengy/.gitignore_global
     autocrlf = false
     ; editor = mvim -f
-    editor = vim
+    editor = nvim
 [diff]
     tool = bc3
 

@@ -132,6 +132,35 @@ bindsym $mod+8 workspace $workspace8
 bindsym $mod+9 workspace $workspace9
 bindsym $mod+0 workspace $workspace10
 
+# numpad 1
+bindcode 87 workspace $workspace1
+# numpad 2
+bindcode 88 workspace $workspace2
+# numpad 3
+bindcode 89 workspace $workspace3
+# numpad 4
+bindcode 83 workspace $workspace4
+# numpad 5
+bindcode 84 workspace $workspace5
+# numpad 6
+bindcode 85 workspace $workspace6
+# numpad 7
+bindcode 79 workspace $workspace7
+# numpad 8
+bindcode 80 workspace $workspace8
+# numpad 9
+bindcode 81 workspace $workspace9
+# numpad 0
+bindcode 90 workspace $workspace10
+# numpad -
+bindcode 82 scratchpad show
+# numpad +
+bindcode 86 exec rofi -show run
+# numpad /
+bindcode 106 exec nautilus ~
+# numpad *
+bindcode 63 kill
+
 # move focused container to workspace
 bindsym $mod+Shift+1 move container to workspace $workspace1
 bindsym $mod+Shift+2 move container to workspace $workspace2

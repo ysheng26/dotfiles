@@ -45,6 +45,9 @@
     ~/.i3:
       relink: true
       path: i3/
+    ~/.fonts:
+      relink: true
+      path: fonts/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

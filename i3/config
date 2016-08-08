@@ -111,14 +111,14 @@ bindsym $mod+minus scratchpad show
 
 set $workspace1 "1: Terminal"
 set $workspace2 "2: Chrome"
-set $workspace3 "3: Chromium"
+set $workspace3 "3: Firefox"
 set $workspace4 "4: GUI Editor"
 set $workspace5 "5: gitk/git gui"
 set $workspace6 "6"
 set $workspace7 "7"
 set $workspace8 "8: Beyond Compare"
-set $workspace9 "9: Mail/Chat"
-set $workspace10 "10: Music"
+set $workspace9 "9: Music"
+set $workspace10 "10: Mail/Chat/Web"
 
 # switch to workspace
 bindsym $mod+1 workspace $workspace1
@@ -247,17 +247,17 @@ exec_always feh --bg-scale ~/Pictures/wallpaper/current
 exec xwrits typetime=20 after 15 clock breakclock multiply=5:1.4
 exec dropbox start
 
-# predefined workspace assignment
+# predefined workspace assignment, use xprop to find class
 assign [class="google-chrome"] $workspace2
-assign [class="chromium-browser"] $workspace3
+assign [class="Firefox"] $workspace3
 assign [class="Sublime_text"] $workspace4
 assign [class="Atom"] $workspace4
 assign [class="jetbrains-webstorm"] $workspace4
 assign [class="Gitk"] $workspace5
 assign [class="Git-gui"] $workspace5
 assign [class="Bcompare"] $workspace8
-assign [class="Firefox"] $workspace9
-assign [class="spotify"] $workspace10
+assign [class="spotify"] $workspace9
+assign [class="chromium-browser"] $workspace10
 
 # multiply monitor configurations
 # use arandr

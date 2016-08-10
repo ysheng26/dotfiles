@@ -42,6 +42,9 @@
     ~/.Xmodmap:
       relink: true
       path: Xmodmap
+    ~/.Xresources:
+      relink: true
+      path: Xresources
     ~/.i3:
       relink: true
       path: i3/

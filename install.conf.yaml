@@ -36,9 +36,6 @@
     ~/.gitignore_global:
       relink: true
       path: gitignore_global
-    ~/.emacs.d:
-      relink: true
-      path: emacs.d/
     ~/.Xmodmap:
       relink: true
       path: Xmodmap

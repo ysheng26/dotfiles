@@ -43,6 +43,12 @@ Return a list of installed packages or nil for every skipped package."
 ; auto-complete
 (global-auto-complete-mode t)
 
+; org mode
+(require 'org)
+(define-key global-map "\C-cl" 'org-store-link)
+(define-key global-map "\C-ca" 'org-agenda)
+(setq org-log-done t)
+
 ; helm
 ; (setq helm-buffers-fuzzy-matching t)
 ; (helm-mode 1)

@@ -1,7 +1,7 @@
 [user]
     name = Yun Sheng
-    ; email = uewing@gmail.com
-    email = yun.sheng@zoominfo.com
+    email = uewing@gmail.com
+    ; email = yun.sheng@zoominfo.com
 [core]
     excludesfile = /Users/shengy/.gitignore_global
     autocrlf = false

@@ -48,9 +48,6 @@
     ~/.fonts:
       relink: true
       path: fonts/
-    ~/.emacs.d:
-      relink: true
-      path: emacs.d/
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

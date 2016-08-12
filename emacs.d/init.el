@@ -28,48 +28,48 @@ Return a list of installed packages or nil for every skipped package."
 (package-initialize)
 
 ;; Assuming you wish to install "iedit" and "magit"
-(ensure-package-installed 'evil
-                          'evil-leader
+(ensure-package-installed ;; 'evil
+                          ;; 'evil-leader
                           'auto-complete
-                          'key-chord
+                          ;; 'key-chord
                           ;; 'iedit
-                          'helm
+                          ;; 'helm
                           ;; 'flycheck
                           ;; 'flycheck-ats2
                           'org
                           ;; 'powerline
                           ;; 'ag
                           ;; 'yasnippet
-                          'magit
+                          ;; 'magit
                           )
 
 ;; evil-leader
-(require 'evil-leader)
-(global-evil-leader-mode)
-(evil-leader/set-leader ",")
-(setq evil-leader/in-all-states 1)
-(evil-leader/set-key
- "w"  'save-buffer
- "q"  'kill-this-buffer
- "1"  'delete-other-windows  ;; C-w o
- ;; "a"  'ag-project            ;; Ag search from project's root
- ;; "t"  'gtags-reindex
- ;; "T"  'gtags-find-tag
- "x"  'helm-M-x)
+;; (require 'evil-leader)
+;; (global-evil-leader-mode)
+;; (evil-leader/set-leader ",")
+;; (setq evil-leader/in-all-states 1)
+;; (evil-leader/set-key
+;;  "w"  'save-buffer
+;;  "q"  'kill-this-buffer
+;;  "1"  'delete-other-windows  ;; C-w o
+;;  ;; "a"  'ag-project            ;; Ag search from project's root
+;;  ;; "t"  'gtags-reindex
+;;  ;; "T"  'gtags-find-tag
+;;  "x"  'helm-M-x)
 
 ;; evil mode
-(require 'evil)
-(evil-mode t)
+;; (require 'evil)
+;; (evil-mode t)
 
-(require 'key-chord)
-;;Exit insert mode by pressing j and then j quickly
-(setq key-chord-two-keys-delay 0.5)
-(key-chord-mode 1)
-(key-chord-define evil-insert-state-map  "jk" 'evil-normal-state)
+;; (require 'key-chord)
+;; ;;Exit insert mode by pressing j and then j quickly
+;; (setq key-chord-two-keys-delay 0.5)
+;; (key-chord-mode 1)
+;; (key-chord-define evil-insert-state-map  "jk" 'evil-normal-state)
 
 ;; swap : and ;
-(define-key evil-motion-state-map ";" 'evil-ex)
-(define-key evil-motion-state-map ":" 'evil-repeat-find-char)
+;; (define-key evil-motion-state-map ";" 'evil-ex)
+;; (define-key evil-motion-state-map ":" 'evil-repeat-find-char)
 
 ;; auto-complete
 (global-auto-complete-mode t)
@@ -81,9 +81,9 @@ Return a list of installed packages or nil for every skipped package."
 (setq org-log-done t)
 
 ;; helm
-(setq helm-buffers-fuzzy-matching t)
-(setq helm-autoresize-mode t)
-(helm-mode 1)
+;; (setq helm-buffers-fuzzy-matching t)
+;; (setq helm-autoresize-mode t)
+;; (helm-mode 1)
 
 ;; powerline
 ;; (powerline-default-theme)

@@ -48,6 +48,9 @@
     ~/.fonts:
       relink: true
       path: fonts/
+    ~/.globalrc:
+      relink: true
+      path: globalrc
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

@@ -22,3 +22,12 @@
 [submodule "misc/ctags.git"]
 	path = misc/ctags.git
 	url = https://github.com/universal-ctags/ctags.git
+[submodule "misc/keystate-plasmoid"]
+	path = misc/keystate-plasmoid
+	url = https://github.com/xdarklight/keystate-plasmoid.git
+[submodule "misc/indicator-xkbmod"]
+	path = misc/indicator-xkbmod
+	url = https://github.com/sneetsher/indicator-xkbmod.git
+[submodule "misc/Keyboard-Modifiers-Status"]
+	path = misc/Keyboard-Modifiers-Status
+	url = https://github.com/sneetsher/Keyboard-Modifiers-Status.git

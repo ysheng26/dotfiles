@@ -54,6 +54,9 @@
     ~/.emacs.d:
       relink: true
       path: emacs.d/
+    ~/.mongorc.js:
+      relink: true
+      path: mongorc.js
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

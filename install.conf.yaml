@@ -57,6 +57,9 @@
     ~/.mongorc.js:
       relink: true
       path: mongorc.js
+    ~/.ideavimrc:
+      relink: true
+      path: ideavimrc
 - shell:
   - [git submodule update --init --recursive, Installing submodules]
   - mkdir -p ~/.config

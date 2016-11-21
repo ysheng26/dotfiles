@@ -1,0 +1,61 @@
+set surround
+
+let mapleader = ","
+inoremap jk <Esc>
+nnoremap j gj
+nnoremap k gk
+nnoremap ; :
+nnoremap : ;
+vnoremap ; :
+vnoremap : ;
+nnoremap <Leader>w :w<cr>
+nnoremap <Leader>q :q<cr>
+
+" Better indentation
+vnoremap < <gv
+vnoremap > >gv
+
+" Keep search matches in the middle of the window.
+nnoremap n nzzzv
+nnoremap N Nzzzv
+
+" *Focus* the current line.
+nnoremap <c-l> zvzz
+
+" Ignore case sensitive
+set ignorecase
+
+" Set highlight search result
+set incsearch
+set hlsearch
+set smartcase
+nnoremap <Space> :nohlsearch<CR>
+
+" Tab and indent settings
+set autoindent
+set cindent
+set tabstop=2
+set softtabstop=2
+set shiftwidth=2
+set shiftround
+set expandtab
+set relativenumber
+
+" Manage split screens
+nnoremap <Leader>1 :action VimWindowOnly<CR>
+nnoremap <Leader>2 :action VimWindowSplitHorizontal<CR>
+nnoremap <Leader>3 :action VimWindowSplitVertical<CR>
+set winminheight=0
+set winminwidth=0
+set splitbelow
+set splitright
+nnoremap <Leader>x <C-W>\|<C-W>_
+nnoremap <A-h> <C-w>h
+nnoremap <A-j> <C-w>j
+nnoremap <A-k> <C-w>k
+nnoremap <A-l> <C-w>l
+
+nnoremap <Leader>m :action RecentFiles<CR>
+nnoremap ]c :action VcsShowNextChangeMarker<CR>
+nnoremap [c :action VcsShowPrevChangeMarker<CR>
+

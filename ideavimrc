@@ -43,8 +43,6 @@ set relativenumber
 
 " Manage split screens
 nnoremap <Leader>1 :action VimWindowOnly<CR>
-nnoremap <Leader>2 :action VimWindowSplitHorizontal<CR>
-nnoremap <Leader>3 :action VimWindowSplitVertical<CR>
 set winminheight=0
 set winminwidth=0
 set splitbelow

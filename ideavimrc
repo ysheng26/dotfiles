@@ -1,3 +1,10 @@
+" extra keymappings needed in idea
+" <c-n> down
+" <c-p> up
+" <ESC> Hide Active Tool Window
+" <a-,> Find Usages
+" <a-.> Find in Path
+
 set surround
 
 let mapleader = ","
@@ -41,10 +48,10 @@ set shiftround
 set expandtab
 set relativenumber
 
-" Manage split screens
-nnoremap <Leader>1 :action VimWindowOnly<CR>
-nnoremap <Leader>2 :action VimWindowSplitHorizontal<CR>
-nnoremap <Leader>3 :action VimWindowSplitVertical<CR>
+" Manage split screens, not sure why split actions not working
+nnoremap <Leader>1 :action UnsplitAll<CR>
+nnoremap <Leader>2 :action SplitHorizontally<CR>
+nnoremap <Leader>3 :action SplitVertically<CR>
 set winminheight=0
 set winminwidth=0
 set splitbelow
@@ -55,7 +62,13 @@ nnoremap <A-j> <C-w>j
 nnoremap <A-k> <C-w>k
 nnoremap <A-l> <C-w>l
 
+" IDE actions
+nnoremap <F4> :action FileStructurePopup<CR>
+nnoremap <Leader>g :action GotoDeclaration<CR>
+nnoremap <Leader>s :action FindUsages<CR>
 nnoremap <Leader>m :action RecentFiles<CR>
+nnoremap K :action QuickJavaDoc<CR>
+nnoremap gcc :action CommentByLineComment<CR>
 nnoremap ]c :action VcsShowNextChangeMarker<CR>
 nnoremap [c :action VcsShowPrevChangeMarker<CR>
 

@@ -71,4 +71,6 @@ nnoremap K :action QuickJavaDoc<CR>
 nnoremap gcc :action CommentByLineComment<CR>
 nnoremap ]c :action VcsShowNextChangeMarker<CR>
 nnoremap [c :action VcsShowPrevChangeMarker<CR>
+nnoremap ]q :action NextOccurence<CR>
+nnoremap [q :action PreviousOccurence<CR>
 

@@ -57,10 +57,10 @@ set winminwidth=0
 set splitbelow
 set splitright
 nnoremap <Leader>x <C-W>\|<C-W>_
-nnoremap <A-h> <C-w>h
-nnoremap <A-j> <C-w>j
-nnoremap <A-k> <C-w>k
-nnoremap <A-l> <C-w>l
+nnoremap <Leader>h <C-w>h
+nnoremap <Leader>j <C-w>j
+nnoremap <Leader>k <C-w>k
+nnoremap <Leader>l <C-w>l
 
 " IDE actions
 nnoremap <F4> :action FileStructurePopup<CR>

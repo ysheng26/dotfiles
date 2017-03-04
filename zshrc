@@ -89,3 +89,5 @@ source $ZSH/oh-my-zsh.sh
 [[ $EMACS = t ]] && unsetopt zle
 
 source ~/.bash_profile
+
+[ -f ~/.fzf.zsh ] && source ~/.fzf.zsh

@@ -8,6 +8,8 @@ export TERM=screen-256color
 export GTAGSCONF=/usr/local/share/gtags/gtags.conf
 export GTAGSLABEL=pygments
 
+source ~/.fzf-extras/fzf-extras.sh
+
 # local bash_profile
 if [ -f ~/.bash_profile_local ]; then
     source ~/.bash_profile_local

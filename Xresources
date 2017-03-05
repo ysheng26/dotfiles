@@ -1,2 +1,4 @@
+xterm*font:     *-fixed-*-*-*-20-*
+
 URxvt.scrollBar: false
 URxvt.font: xft:monospace:size=16

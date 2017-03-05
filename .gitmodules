@@ -31,3 +31,6 @@
 [submodule "misc/Keyboard-Modifiers-Status"]
 	path = misc/Keyboard-Modifiers-Status
 	url = https://github.com/sneetsher/Keyboard-Modifiers-Status.git
+[submodule "misc/fzf-extras"]
+	path = misc/fzf-extras
+	url = https://github.com/atweiden/fzf-extras.git

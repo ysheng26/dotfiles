@@ -30,6 +30,9 @@
     ~/.zshrc:
       relink: true
       path: zshrc
+    ~/.fzf-extras:
+      relink: true
+      path: misc/fzf-extras/
     ~/.gitconfig:
       relink: true
       path: gitconfig

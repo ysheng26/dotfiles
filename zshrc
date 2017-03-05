@@ -90,4 +90,8 @@ source $ZSH/oh-my-zsh.sh
 
 source ~/.bash_profile
 
+# fzf settings
 [ -f ~/.fzf.zsh ] && source ~/.fzf.zsh
+source ./.fzf-extras/fzf-extras.sh
+source ./.fzf-extras/fzf-extras.zsh
+

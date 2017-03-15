@@ -6,7 +6,7 @@
     excludesfile = /Users/shengy/.gitignore_global
     autocrlf = false
     ; editor = mvim -f
-    editor = nvim
+    editor = vim
 [diff]
     tool = bc3
 

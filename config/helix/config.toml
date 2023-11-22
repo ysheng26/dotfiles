@@ -1,0 +1,42 @@
+theme = "monokai"
+# theme = "monokai_aqua"
+
+[editor]
+# bufferline = "always"
+line-number = "relative"
+scrolloff = 0
+auto-format = true
+true-color = true
+
+# [editor.soft-wrap]
+# enable = true
+
+[editor.cursor-shape]
+insert = "bar"
+
+# [editor.indent-guides]
+# render = true
+# character = "╎" # Some characters that work well: "▏", "┆", "┊", "⸽"
+# skip-levels = 1
+
+[editor.statusline]
+left = ["mode", "version-control", "file-name", "file-modification-indicator"]
+center = []
+right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding", "file-line-ending", "file-type", "spinner"]
+separator = "│"
+mode.normal = "NORMAL"
+mode.insert = "INSERT"
+mode.select = "SELECT"
+
+[editor.whitespace]
+render = "all"
+
+[keys.insert]
+j = { k = "normal_mode" } # Maps `jk` to exit insert mode
+C-space = "completion"
+
+[keys.normal]
+# G = "goto_file_end"
+H = "goto_window_top"
+M = "goto_window_center"
+L = "goto_window_bottom"

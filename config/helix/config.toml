@@ -43,3 +43,17 @@ C-space = "completion"
 H = "goto_window_top"
 M = "goto_window_center"
 L = "goto_window_bottom"
+X = "extend_line_up"
+
+"F3" = [
+  "move_prev_word_start",
+  "move_next_word_end",
+  "search_selection",
+  "global_search",
+]
+
+[keys.select]
+"F3" = [
+  "search_selection",
+  "global_search",
+]

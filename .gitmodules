@@ -1,36 +1,6 @@
-[submodule "dotbot"]
-	path = dotbot
-	url = https://github.com/anishathalye/dotbot.git
 [submodule "dbsmvim"]
 	path = dbsmvim
 	url = https://github.com/ShengYun/dbsmvim.git
-[submodule "dbstmux"]
-	path = dbstmux
-	url = https://github.com/ShengYun/dbstmux.git
-[submodule "oh-my-zsh"]
-	path = oh-my-zsh
-	url = https://github.com/robbyrussell/oh-my-zsh.git
 [submodule "solarized"]
 	path = solarized
 	url = https://github.com/ShengYun/solarize.git
-[submodule "misc/gnome-terminal-colors-solarized"]
-	path = misc/gnome-terminal-colors-solarized
-	url = https://github.com/Anthony25/gnome-terminal-colors-solarized.git
-[submodule "misc/dircolors-solarized"]
-	path = misc/dircolors-solarized
-	url = https://github.com/seebi/dircolors-solarized.git
-[submodule "misc/ctags.git"]
-	path = misc/ctags.git
-	url = https://github.com/universal-ctags/ctags.git
-[submodule "misc/keystate-plasmoid"]
-	path = misc/keystate-plasmoid
-	url = https://github.com/xdarklight/keystate-plasmoid.git
-[submodule "misc/indicator-xkbmod"]
-	path = misc/indicator-xkbmod
-	url = https://github.com/sneetsher/indicator-xkbmod.git
-[submodule "misc/Keyboard-Modifiers-Status"]
-	path = misc/Keyboard-Modifiers-Status
-	url = https://github.com/sneetsher/Keyboard-Modifiers-Status.git
-[submodule "misc/fzf-extras"]
-	path = misc/fzf-extras
-	url = https://github.com/atweiden/fzf-extras.git

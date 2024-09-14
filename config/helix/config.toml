@@ -62,9 +62,11 @@ a = [
   "search_selection",
   "global_search",
 ]
+"." = "code_action"
 
 [keys.select."space"]
 a = [
   "search_selection",
   "global_search",
 ]
+"." = "code_action"

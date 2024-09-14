@@ -44,16 +44,27 @@ H = "goto_window_top"
 M = "goto_window_center"
 L = "goto_window_bottom"
 X = "extend_line_up"
+C-h = "jump_view_left"
+C-j = "jump_view_down"
+C-k = "jump_view_up"
+C-l = "jump_view_right"
 
-"F3" = [
+[keys.normal."space"]
+1 = ":buffer-close-others"
+2 = ":hsplit"
+3 = ":vsplit"
+w = ":write"
+q = ":quit"
+n = ":new"
+a = [
   "move_prev_word_start",
   "move_next_word_end",
   "search_selection",
   "global_search",
 ]
 
-[keys.select]
-"F3" = [
+[keys.select."space"]
+a = [
   "search_selection",
   "global_search",
 ]

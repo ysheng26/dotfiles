@@ -16,6 +16,6 @@ option_as_alt = "Both"
 [font]
 size = 19
 
-[mouse]
-hide_when_typing = true
+# [mouse]
+# hide_when_typing = true
 

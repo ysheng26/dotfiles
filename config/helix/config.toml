@@ -50,9 +50,9 @@ C-k = "jump_view_up"
 C-l = "jump_view_right"
 
 [keys.normal."space"]
-1 = ":buffer-close-others"
-2 = ":hsplit"
-3 = ":vsplit"
+1 = "wonly"
+2 = "hsplit"
+3 = "vsplit"
 w = ":write"
 q = ":quit"
 n = ":new"

@@ -1,5 +1,5 @@
 # theme = "monokai"
-theme = "emacs"
+theme = "onelight"
 
 [editor]
 # bufferline = "always"

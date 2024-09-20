@@ -1,5 +1,5 @@
-theme = "monokai"
-# theme = "monokai_aqua"
+# theme = "monokai"
+theme = "emacs"
 
 [editor]
 # bufferline = "always"
@@ -11,8 +11,8 @@ true-color = true
 [editor.file-picker]
 hidden = false
 
-# [editor.soft-wrap]
-# enable = true
+[editor.soft-wrap]
+enable = true
 
 [editor.cursor-shape]
 insert = "bar"

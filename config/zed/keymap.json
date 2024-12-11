@@ -1,0 +1,36 @@
+// Zed keymap
+//
+// For information on binding keys, see the Zed
+// documentation: https://zed.dev/docs/key-bindings
+//
+// To see the default key bindings run `zed: open default keymap`
+// from the command palette.
+[
+  {
+    "context": "Editor && vim_mode == insert && !menu",
+    "bindings": {
+      "j k": ["vim::SwitchMode", "Normal"]
+    }
+  },
+  {
+    "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
+    "use_layout_keys": true,
+    "bindings": {
+      // window related commands (ctrl-w X)
+      "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
+      "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
+      "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
+      ", 1": "workspace::CloseInactiveTabsAndPanes",
+      ", 2": "pane::SplitHorizontal",
+      ", 3": "pane::SplitVertical"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
+    "bindings": {
+      ", w": "workspace::Save",
+      ", q": "pane::CloseActiveItem"
+    }
+  }
+]

@@ -12,9 +12,9 @@
     }
   },
   {
-    "context": "Editor && vim_mode == insert && !menu",
+    "context": "vim_mode == insert",
     "bindings": {
-      "j k": ["vim::SwitchMode", "Normal"]
+      "j k": "vim::NormalBefore"
     }
   },
   {
@@ -25,17 +25,17 @@
       "ctrl-h": ["workspace::ActivatePaneInDirection", "Left"],
       "ctrl-l": ["workspace::ActivatePaneInDirection", "Right"],
       "ctrl-k": ["workspace::ActivatePaneInDirection", "Up"],
-      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"],
-      ", 1": "workspace::CloseInactiveTabsAndPanes",
-      ", 2": "pane::SplitHorizontal",
-      ", 3": "pane::SplitVertical"
+      "ctrl-j": ["workspace::ActivatePaneInDirection", "Down"]
     }
   },
   {
     "context": "Editor && vim_mode == normal && vim_operator == none && !VimWaiting",
     "bindings": {
       ", w": "workspace::Save",
-      ", q": "pane::CloseActiveItem"
+      ", q": "pane::CloseActiveItem",
+      ", 1": "workspace::CloseInactiveTabsAndPanes",
+      ", 2": "pane::SplitHorizontal",
+      ", 3": "pane::SplitVertical"
     }
   }
 ]

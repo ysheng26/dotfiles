@@ -32,5 +32,6 @@
   },
   "vertical_scroll_margin": 0,
   "pane_split_direction_horizontal": "down",
-  "pane_split_direction_vertical": "right"
+  "pane_split_direction_vertical": "right",
+  "ensure_final_newline_on_save": false
 }

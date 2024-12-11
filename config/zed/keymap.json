@@ -7,6 +7,11 @@
 // from the command palette.
 [
   {
+    "bindings": {
+      "f1": "command_palette::Toggle"
+    }
+  },
+  {
     "context": "Editor && vim_mode == insert && !menu",
     "bindings": {
       "j k": ["vim::SwitchMode", "Normal"]

@@ -7,7 +7,7 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "theme": "Gruvbox Dark Hard",
+  "theme": "Rosé Pine Moon",
   "telemetry": {
     "diagnostics": false,
     "metrics": false

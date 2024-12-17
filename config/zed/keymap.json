@@ -8,7 +8,8 @@
 [
   {
     "bindings": {
-      "f1": "command_palette::Toggle"
+      "f1": "command_palette::Toggle",
+      "f3": "pane::DeploySearch"
     }
   },
   {
@@ -35,7 +36,19 @@
       ", q": "pane::CloseActiveItem",
       ", 1": "workspace::CloseInactiveTabsAndPanes",
       ", 2": "pane::SplitHorizontal",
-      ", 3": "pane::SplitVertical"
+      ", 3": "pane::SplitVertical",
+      ", s": "editor::FindAllReferences", // zed specific
+      ", g": "editor::GoToDefinition",
+      ", G": "editor::GoToDeclaration",
+      ", t": "editor::GoToTypeDefinition",
+      ", i": "editor::GoToImplementation",
+      ", a": "pane::DeploySearch"
+    }
+  },
+  {
+    "context": "Editor && vim_mode == visual && vim_operator == none && !VimWaiting",
+    "bindings": {
+      ", a": "pane::DeploySearch"
     }
   }
 ]

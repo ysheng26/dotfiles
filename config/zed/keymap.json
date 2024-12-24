@@ -19,6 +19,19 @@
     }
   },
   {
+    "context": "vim_mode == normal",
+    "bindings": {
+      ";": "command_palette::Toggle",
+      "space": "editor::Cancel"
+    }
+  },
+  {
+    "context": "VimControl && !menu",
+    "bindings": {
+      ":": "vim::RepeatFind"
+    }
+  },
+  {
     "context": "ProjectPanel || CollabPanel || OutlinePanel || ChatPanel || VimControl || EmptyPane || SharedScreen || MarkdownPreview || KeyContextView",
     "use_layout_keys": true,
     "bindings": {

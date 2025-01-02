@@ -1,6 +1,7 @@
 # theme = Ubuntu
 theme = rose-pine-moon
 
+font-family = "JetBrains Mono NL"
 font-size = 20
 window-inherit-font-size = false
 

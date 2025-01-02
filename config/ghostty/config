@@ -1,0 +1,9 @@
+# theme = Ubuntu
+theme = rose-pine-moon
+
+font-size = 20
+window-inherit-font-size = false
+
+cursor-style = block
+shell-integration-features = no-cursor
+

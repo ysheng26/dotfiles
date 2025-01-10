@@ -8,3 +8,5 @@ window-inherit-font-size = false
 cursor-style = block
 shell-integration-features = no-cursor
 
+mouse-hide-while-typing = true
+

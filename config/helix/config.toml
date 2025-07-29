@@ -1,5 +1,5 @@
-theme = "monokai"
-# theme = "onelight"
+# theme = "monokai"
+theme = "onelight"
 
 [editor]
 # bufferline = "always"
@@ -25,7 +25,16 @@ insert = "bar"
 [editor.statusline]
 left = ["mode", "version-control", "file-name", "file-modification-indicator"]
 center = []
-right = ["diagnostics", "selections", "position", "total-line-numbers", "file-encoding", "file-line-ending", "file-type", "spinner"]
+right = [
+    "diagnostics",
+    "selections",
+    "position",
+    "total-line-numbers",
+    "file-encoding",
+    "file-line-ending",
+    "file-type",
+    "spinner",
+]
 separator = "│"
 mode.normal = "NORMAL"
 mode.insert = "INSERT"
@@ -57,16 +66,13 @@ w = ":write"
 q = ":quit"
 n = ":new"
 a = [
-  "move_prev_word_start",
-  "move_next_word_end",
-  "search_selection",
-  "global_search",
+    "move_prev_word_start",
+    "move_next_word_end",
+    "search_selection",
+    "global_search",
 ]
 "." = "code_action"
 
 [keys.select."space"]
-a = [
-  "search_selection",
-  "global_search",
-]
+a = ["search_selection", "global_search"]
 "." = "code_action"

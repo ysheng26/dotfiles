@@ -7,7 +7,8 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "theme": "Rosé Pine Moon",
+  "theme": "One Light",
+  "disable_ai": true,
   "telemetry": {
     "diagnostics": false,
     "metrics": false
@@ -25,7 +26,7 @@
   },
   "buffer_font_family": "JetBrains Mono NL",
   "features": {
-    "inline_completion_provider": "none"
+    "edit_prediction_provider": "none"
   },
   "terminal": {
     "option_as_meta": true

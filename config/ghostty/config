@@ -1,8 +1,8 @@
 # theme = Ubuntu
-theme = rose-pine-moon
+theme = AtomOneLight
 
 font-family = "JetBrains Mono NL"
-font-size = 20
+font-size = 19
 window-inherit-font-size = false
 
 cursor-style = block

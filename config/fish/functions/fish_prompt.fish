@@ -4,6 +4,7 @@ function fish_prompt --description 'Write out the prompt'
         set -l status_color (set_color brgreen)
         set -l cwd_color (set_color $fish_color_cwd)
         set -l vcs_color (set_color brpurple)
+        set -l timestamp "[$(date "+%H:%M:%S")]"
         set -l prompt_status ""
 
         # fish_git_prompt
@@ -34,7 +35,7 @@ function fish_prompt --description 'Write out the prompt'
         or set -lx fish_prompt_pwd_dir_length 0
 
         # Color the prompt differently when we're root
-        set -l suffix '~>'
+        set -l suffix '>'
         if functions -q fish_is_root_user; and fish_is_root_user
                 if set -q fish_color_cwd_root
                         set cwd_color (set_color $fish_color_cwd_root)
@@ -48,6 +49,6 @@ function fish_prompt --description 'Write out the prompt'
                 set prompt_status $status_color "[" $last_status "]" $normal
         end
 
-        echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $prompt_status
+        echo -s (prompt_login) ' ' $cwd_color (prompt_pwd) $vcs_color (fish_vcs_prompt) $normal ' ' $timestamp ' ' $prompt_status
         echo -n -s $status_color $suffix ' ' $normal
 end

@@ -1,7 +1,7 @@
 {
   "ui": {
     "customThemes": {
-      "vscode-light-modern": {
+      "VSCode Light Modern": {
         "type": "custom",
         "name": "VSCode Light Modern",
         "text": {
@@ -39,8 +39,47 @@
         "Comment": "#008000",
         "Gray": "#6e7681",
         "DarkGray": "#616161"
+      },
+      "VSCode Dark Modern": {
+        "type": "custom",
+        "name": "VSCode Dark Modern",
+        "text": {
+          "primary": "#cccccc",
+          "secondary": "#9d9d9d",
+          "link": "#4daafc",
+          "accent": "#2aaaff"
+        },
+        "background": {
+          "primary": "#1f1f1f",
+          "diff": {
+            "added": "#607235",
+            "removed": "#932123"
+          }
+        },
+        "border": {
+          "default": "#ffffff17",
+          "focused": "#0078d4"
+        },
+        "ui": {
+          "comment": "#6A9955",
+          "symbol": "#ee9d28",
+          "gradient": [
+            "#0078d4",
+            "#026ec1"
+          ]
+        },
+        "AccentBlue": "#59a4f9",
+        "AccentCyan": "#11a8cd",
+        "AccentGreen": "#89d185",
+        "AccentYellow": "#ce9178",
+        "AccentRed": "#f14c4c",
+        "AccentPurple": "#b180d7",
+        "LightBlue": "#3b8eea",
+        "Comment": "#6A9955",
+        "Gray": "#868686",
+        "DarkGray": "#37373d"
       }
     },
-    "theme": "vscode-light-modern"
+    "theme": "VSCode Light Modern"
   }
 }

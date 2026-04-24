@@ -13,4 +13,5 @@
     ci = commit
     df = diff
     dt = difftool
+    dtd = difftool -d --no-symlinks
 

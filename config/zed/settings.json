@@ -7,32 +7,45 @@
 // custom settings, run `zed: open default settings` from the
 // command palette (cmd-shift-p / ctrl-shift-p)
 {
-  "theme": "One Light",
+  "icon_theme": {
+    "mode": "dark",
+    "light": "Zed (Default)",
+    "dark": "Zed (Default)",
+  },
+  "edit_predictions": {
+    "provider": "none",
+  },
+  "show_whitespaces": "all",
+  "theme": {
+    "mode": "dark",
+    "light": "One Light",
+    "dark": "Monokai-og",
+  },
   "disable_ai": true,
   "telemetry": {
     "diagnostics": false,
-    "metrics": false
+    "metrics": false,
   },
   "base_keymap": "VSCode",
-  "vim_mode": true,
+  "vim_mode": false,
   "vim": {
-    "toggle_relative_line_numbers": true
+    "toggle_relative_line_numbers": true,
   },
   "ui_font_size": 16,
   "buffer_font_size": 16,
   "buffer_font_features": {
     // disable font ligatures
-    "calt": false
+    "calt": false,
   },
   "buffer_font_family": "JetBrains Mono NL",
-  "features": {
-    "edit_prediction_provider": "none"
-  },
   "terminal": {
-    "option_as_meta": true
+    "option_as_meta": true,
+  },
+  "project_panel": {
+    "dock": "left",
   },
   "vertical_scroll_margin": 0,
   "pane_split_direction_horizontal": "down",
   "pane_split_direction_vertical": "right",
-  "ensure_final_newline_on_save": false
+  "ensure_final_newline_on_save": false,
 }
